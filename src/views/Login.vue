@@ -63,7 +63,7 @@ export default defineComponent({
     },
     async registerUser() {
       try {
-        const response = await axios.post('http://localhost:3000/register/created_user', {
+        const response = await axios.post('http://localhost:3000/login/created_user', {
           email: this.email,
           password: this.password,
         });
